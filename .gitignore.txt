@@ -1,2 +1,2 @@
-tmdb-movie-metadata/tmdb_5000_credits
-tmdb-movie-metadata/tmdb_5000_movies
+tmdb-movie-metadata/
+.ipynb_checkpoints/
