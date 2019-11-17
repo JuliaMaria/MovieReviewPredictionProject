@@ -1,2 +1,0 @@
-tmdb-movie-metadata/
-.ipynb_checkpoints/
