@@ -3,7 +3,7 @@ The goal of this project was to create a regression machine learning model to pr
 # Dataset
 https://www.kaggle.com/deepak525/investigate-tmdb-movie-dataset/data
 # Data preprocessing
-Dataset contains records with information about 10000 TMDB movies. The following features from the dataset were used: 'cast', 'director', 'budget', 'genres', 'production_companies', 'runtime', 'release_year', 'vote_average'. For each movie for feature 'cast' only 5 leading actors were taken into account. Features 'cast', 'director', 'genres' and 'production_companies' were preprocessed with one-hot encoder using only 500 most frequent values for 'cast', 'director' and 'production_companies'.
+Dataset contains records with information about 10000 TMDB movies. The following features from the dataset were used: 'cast', 'director', 'budget', 'genres', 'production_companies', 'runtime', 'release_year' to predict 'vote_average' which is an average TMDB movie rating. For each movie for feature 'cast' only 5 leading actors were taken into account. Features 'cast', 'director', 'genres' and 'production_companies' were preprocessed with one-hot encoder using only 500 most frequent values for 'cast', 'director' and 'production_companies'.
 # Model training
 The library chosen for this task was xgboost with XGBRegressor model and gpu_hist method, which enables GPU support. After GridSearch the following best parameters were chosen to train the model: 'alpha': 0, 'eta': 0.3, 'lambda': 1, 'max_depth': 4, 'n_estimators': 200.
 # Model evaluation
